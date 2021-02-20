@@ -108,5 +108,6 @@ client = MyClient()
 #client.run('ODEyNTY2NDM5MDMzOTYyNTA2.YDCndw.G0C9YkJuh9kdtACl1r3F-nrteRA')
 
 token = os.environ.get('BOT_TOKEN')
+client.run(str(token))
 
 
