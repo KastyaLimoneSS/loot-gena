@@ -39,7 +39,7 @@ def item():
         ench = random.randint(0,3)
         out += Weapon[random.randint(0, len(Weapon) - 1)]
         if ench in [1,3]:
-            out += " +" + str(random.randint(1,ench)) + Dices[random.randint(0, len(Dices) - 1)] + Damage_Types[random.randint(0, len(Damage_Types) - 1)]
+            out += " +" + str(random.randint(1,4-ench)) + Dices[random.randint(0, len(Dices) - 1)] + Damage_Types[random.randint(0, len(Damage_Types) - 1)]
 
 
         if ench in [2,3]:
