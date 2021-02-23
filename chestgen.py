@@ -102,7 +102,7 @@ class MyClient(discord.Client):
         print('Message from {0.author}: {0.content}'.format(message))
         #print('809437955331981374' in message.author.roles)
         if not has_role(message.author,812568275518226443):
-            await message.channel.send('{0.author.nick}'.format(message) + command('{0.content}'.format(message)))
+            await message.channel.send("@"+'{0.author.nick}'.format(message) + command('{0.content}'.format(message)))
 
 client = MyClient()
 #client.run('ODEyNTY2NDM5MDMzOTYyNTA2.YDCndw.G0C9YkJuh9kdtACl1r3F-nrteRA')
