@@ -83,7 +83,7 @@ def command(inp):
             else:
                 return ", ты ёба? Возьми свои 32 и проваливай! Твой лут:" + "\n" + chest(32)
         except:
-            cnt = random.randint(0, 4)
+            cnt = random.randint(1, 4)
         return ", твой лут:" + "\n" + chest(cnt)
     elif not (rooms[0] in Commands):
         rooms[0] = int(rooms[0])
